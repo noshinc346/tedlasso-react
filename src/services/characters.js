@@ -27,7 +27,7 @@ export const createCharacter = async (characterData) => {
     }
 }
 
-export const editCharacters = async (id, characterData) => {
+export const editCharacter = async (id, characterData) => {
     try {
         const response = await api.put(`/characters/${id}`, characterData);
         return response.data;
@@ -36,7 +36,7 @@ export const editCharacters = async (id, characterData) => {
     }
 }
 
-export const deleteCharacters = async (id) => {
+export const deleteCharacter = async (id) => {
     try {
         const response = await api.delete(`/characters/${id}`);
         return response.data;
