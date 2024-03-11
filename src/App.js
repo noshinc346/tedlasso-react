@@ -30,16 +30,14 @@ function App() {
             <Route path="/home" element={<Home />} />
             <Route path="/characters" element={<Characters />} />
             <Route path="/character/:id" element={<CharacterDetail />} />
-            <Route path="/home" element={<CharacterCreate />} />
-            <Route path="/home" element={<CharacterEdit />} />
-            <Route path="/home" element={<Episodes />} />
-            <Route path="/home" element={<EpisodeEdit />} />
-            <Route path="/home" element={<EpisodeCreate />} />
-            <Route path="/home" element={<Quotes />} />
-            <Route path="/home" element={<QuoteEdit />} />
-            <Route path="/home" element={<QuoteCreate />} />
-
-
+            <Route path="/create-character" element={<CharacterCreate />} />
+            <Route path="/character/:id/edit" element={<CharacterEdit />} />
+            <Route path="/episodes" element={<Episodes />} />
+            <Route path="/episodes/:id/edit" element={<EpisodeEdit />} />
+            <Route path="/create-episode" element={<EpisodeCreate />} />
+            <Route path="/quotes" element={<Quotes />} />
+            <Route path="/quotes/:id/edit" element={<QuoteEdit />} />
+            <Route path="/create-quote" element={<QuoteCreate />} />
           </Routes>
         </>
       }
