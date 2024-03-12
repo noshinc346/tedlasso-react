@@ -5,6 +5,7 @@
         "left right";
     ;
     box-sizing: border-box;
+    height: 100vh;
 }
 
 .leftLanding {
@@ -22,4 +23,16 @@
 .rightLanding {
     grid-area: right;
     background-color: aqua;
+}
+
+.character-images {
+    height: 150px;
+    width: auto;
+}
+
+.characters-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
 }

@@ -29,9 +29,9 @@ function App() {
           <Routes>
             <Route path="/home" element={<Home />} />
             <Route path="/characters" element={<Characters />} />
-            <Route path="/character/:id" element={<CharacterDetail />} />
+            <Route path="/characters/:id" element={<CharacterDetail />} />
             <Route path="/create-character" element={<CharacterCreate />} />
-            <Route path="/character/:id/edit" element={<CharacterEdit />} />
+            <Route path="/characters/:id/edit" element={<CharacterEdit />} />
             <Route path="/episodes" element={<Episodes />} />
             <Route path="/episodes/:id/edit" element={<EpisodeEdit />} />
             <Route path="/create-episode" element={<EpisodeCreate />} />

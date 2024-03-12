@@ -1,6 +1,8 @@
 
 import { useState, useEffect } from 'react';
 import {getCharacters} from "../services/characters";
+import { Link } from 'react-router-dom';
+import Character from '../components/Character.jsx';
 
 function Characters() {
   
@@ -17,7 +19,22 @@ function Characters() {
 
 
   return (
-    <div>Characters</div>
+    <div>
+      <h1>The Characters</h1>
+      <p>Meet the characters from Ted Lasso. Each bringing their own unique story on screen.</p>
+      <div>
+        <Link to={`/create-character`}>
+        <button>Create</button>
+        </Link>
+      </div>
+      <div className="characters-container">
+        {
+          characters.map((character)=>(
+            <Character character={character} key={character._id}/>
+          ))
+        }
+      </div>
+    </div>
   )
 }
 
