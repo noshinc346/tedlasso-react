@@ -5,7 +5,9 @@ function Landing() {
   return (
     <div className='landingPage'>
       <div className='leftLanding'>
+        <div className='landingLogo' >
         <h1 className='serviceName'>&Chill</h1>
+        </div>
         <p className='serviceLine'>Stream your favorite content online.</p>
         <Link to="/home">
           <button className='watchButton'>WATCH</button>
