@@ -37,18 +37,18 @@ function CharacterDetail() {
 
 
   return (
-    <div>
+    <div className='detailPage'>
       <h1>Meet {character.character}</h1>
       <h2>Also known as: {character.aliases}</h2>
-      <img src={character.image} alt={character.character} />
-      <p>{character.actorName}</p>
-      <p>{character.occupation}</p>
+      <img className='characterImg' src={character.image} alt={character.character} />
+      <p>Played by: {character.actorName}</p>
+      <p>Occupation: {character.occupation}</p>
       <p>{character.postion}</p>
       <p>{character.number}</p>
       <p>{character.affiliations}</p>
       <p>{character.height}</p>
       <p>{character.gender}</p>
-      <p>{character.birthplace}</p>
+      <p>Birthplace: {character.birthplace}</p>
 
       <div>
         <Link to={`/characters/${id}/edit`}>

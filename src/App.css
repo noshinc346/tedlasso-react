@@ -28,7 +28,7 @@
 
 .character-images {
     height: 150px;
-    width: auto;
+
 }
 
 .characters-container {
@@ -105,16 +105,6 @@ nav {
     height:204px;
   }
 
-/* .marquee-container {
-    height: 100vh;
-  } */
-
-
-
-
-
-
-
   .marquee-container {
     width: 100%;
     height: 100vh;
@@ -172,3 +162,39 @@ nav {
     }
   }
   
+.characterPage {
+    background-color: #0E2439;
+}
+
+.charactersTitle {
+    text-align: center;
+    margin: 0px;
+    color: white;
+}
+
+.charactersLine {
+    text-align: center;
+    color: white;
+}
+
+.createButton {
+    text-align: center;
+    margin: 48%;
+}
+
+.characterImg {
+    height: 200px;
+
+}
+
+.characterBox {
+    width: 250px;
+    text-align: center;
+    padding: 10px;
+    margin: 30px;
+    background-color: aliceblue;
+}
+
+.detailPage {
+    text-align: center;
+}

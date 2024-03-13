@@ -19,11 +19,11 @@ function Characters() {
 
 
   return (
-    <div>
-      <h1>The Characters</h1>
-      <p>Meet the characters from Ted Lasso. Each bringing their own unique story on screen.</p>
+    <div className='characterPage'>
+      <h1 className='charactersTitle'>The Characters</h1>
+      <p className='charactersLine'>Meet the characters from Ted Lasso. Each bringing their own unique story on screen.</p>
       <div>
-        <Link to={`/create-character`}>
+        <Link className='createButton' to={`/create-character`}>
         <button>Create</button>
         </Link>
       </div>
